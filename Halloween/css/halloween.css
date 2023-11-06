@@ -1,0 +1,52 @@
+/*****/
+/****/
+
+
+
+/*external fonts*/
+
+
+/****scenario***/
+body{
+  background-color: black;
+}
+#scenario {
+  width: 1600px;
+  height: 899px;
+  background-image: url(../img/background.jpg);
+  margin:auto;
+  position:relative
+}
+#door{
+  width: 50px;
+  height: 80px;
+/*border: 2px solid purple; se coloca un borde visible para encontrarlo al momento de posicionarlo*/
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+top: 450px;
+left: 950px;
+}
+#pumpkin_smile{
+  width: 80px;
+  height: 20px;
+border: 2px solid white; 
+position: absolute; 
+top: 670px;
+left: 200px;
+}
+
+#chimney{
+  width: 70px;
+  height: 90px;
+border: 2px solid white; 
+position: absolute; 
+top: 140px;
+left: 1180px;
+}
+#witch{
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+top: 460px;
+left: 840px;
+display: none;
+}
