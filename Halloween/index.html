@@ -17,13 +17,21 @@
 
   <div id="scenario">
     <!-- we´re going to fix an specific area for an event for example the door-->
+
     <img id="witch" src="./img/witch.gif" alt="">
-    <div id="door" onmouseover="show('witch')" onmouseout="hide('witch')"> <!--esto es el nombre de una funcion*-->
+    <div id="door" onmouseover="show('witch'); sound('witchlaugh')" onmouseout="hide('witch'); silence('witchlaugh')">
+      <!--esto es el nombre de una funcion y lo que esta entre parentesis es el id de la imagen-->
       <!--nothing inside-->
     </div>
+    <audio id="witchlaugh">
+      <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
+      <source src="sound/evil-witch-laugh-140135.mp3" type="audio/mp3">
+    </audio>
+
     <div id="pumpkin_smile">
       <!--nothing inside-->
     </div>
+
     <div id="chimney">
       <!--nothing inside-->
     </div>

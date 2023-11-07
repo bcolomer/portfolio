@@ -1,7 +1,7 @@
 /*****/
 /****/
 
-
+  
 
 /*external fonts*/
 
@@ -26,6 +26,16 @@ position: absolute;
 top: 450px;
 left: 950px;
 }
+#witch{
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+height: 100px;
+top: 460px;
+left: 900px;
+/*border: 2px solid purple;
+display: none; la bruja no se ve por defecto*/
+visibility:hidden;
+}
 #pumpkin_smile{
   width: 80px;
   height: 20px;
@@ -42,11 +52,4 @@ border: 2px solid white;
 position: absolute; 
 top: 140px;
 left: 1180px;
-}
-#witch{
-position: absolute; 
-/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
-top: 460px;
-left: 840px;
-display: none;
 }

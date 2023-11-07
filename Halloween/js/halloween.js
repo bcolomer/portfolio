@@ -5,9 +5,16 @@
  * comment: my first excercise with js functions
  ***********************************************/
 
-function show(){
-
+function show(element){
+    document.getElementById(element).style.visibility= "visible"; /*document es el pagina completa, los elementos tienen estilo todos, */
+/**cuando hay varias cosas juntas por medio de . es que esta orientado a objetos */
+}function sound(element){
+  document.getElementById(element).play();
 }
-function hide(){
+function silence(element){
+  document.getElementById(element).play();
+}
+function hide(element){
+  document.getElementById(element).style.visibility = "hidden";
   
-}
+}  
