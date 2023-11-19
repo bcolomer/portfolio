@@ -17,4 +17,5 @@ function silence(element){
 function hide(element){
   document.getElementById(element).style.visibility = "hidden";
   
-}  
+}     
+

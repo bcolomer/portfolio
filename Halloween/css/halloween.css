@@ -11,8 +11,8 @@ body{
   background-color: black;
 }
 #scenario {
-  width: 1600px;
-  height: 899px;
+  width: 1400px;
+  height: 700px;
   background-image: url(../img/background.jpg);
   margin:auto;
   position:relative
@@ -39,17 +39,36 @@ visibility:hidden;
 #pumpkin_smile{
   width: 80px;
   height: 20px;
-border: 2px solid white; 
+/*border: 2px solid white; */
 position: absolute; 
-top: 670px;
+top: 570px;
 left: 200px;
 }
-
+#face{
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+height: 200px;
+top: 570px;
+left: 200px;
+/*border: 2px solid purple;
+display: none; la bruja no se ve por defecto*/
+visibility:hidden;
+}
 #chimney{
   width: 70px;
   height: 90px;
-border: 2px solid white; 
+/*border: 2px solid white;*/ 
 position: absolute; 
 top: 140px;
+left: 1250px;
+}
+#bat{
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+height: 100px;
+top: 140px;
 left: 1180px;
+/*border: 2px solid purple;
+display: none; la bruja no se ve por defecto*/
+visibility:hidden;
 }

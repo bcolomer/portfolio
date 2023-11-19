@@ -25,16 +25,24 @@
     </div>
     <audio id="witchlaugh">
       <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
-      <source src="sound/evil-witch-laugh-140135.mp3" type="audio/mp3">
+      <source src="sound/risaBruja.mp3" type="audio/mp3">
     </audio>
-
-    <div id="pumpkin_smile">
-      <!--nothing inside-->
-    </div>
-
-    <div id="chimney">
-      <!--nothing inside-->
-    </div>
+    <img id="face" src="./img/face.gif" alt="">
+    <div id="pumpkin_smile" onmouseover="show('face'); sound('grito')" onmouseout="hide('face'); silence('grito')">
+    </div>>
+    <audio id="grito">
+      <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
+      <source src="sound/grito.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  <img id="bat" src="./img/bat.gif" alt="">
+  <div id="chimney" onmouseover="show('bat'); sound ('batsound')" onmouseout="hide('bat'); silence ('batsound')">
+    <!--nothing inside-->
+  </div>
+  <audio id="batsound">
+    <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
+    <source src="sound/bats.mp3" type="audio/mp3">
+  </audio>
   </div>
 </body>
 
