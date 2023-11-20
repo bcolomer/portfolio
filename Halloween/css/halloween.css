@@ -7,9 +7,15 @@
 
 
 /****scenario***/
+@font-face {
+  src: url(/Halloween/font/bloody.ttf); 
+  font-family: terror;
+  
+}
 body{
   background-color: black;
 }
+
 #scenario {
   width: 1400px;
   height: 700px;
@@ -72,3 +78,32 @@ left: 1180px;
 display: none; la bruja no se ve por defecto*/
 visibility:hidden;
 }
+#doortext{
+  color: aliceblue;
+  font-size: 2.5em;
+  font-family: terror;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  
+}
+/*la animacion mas sencilla se controla desde cs */
+/*#doortext:hover{   color: red;}
+mirar animations en cssesto deberia ir arriba tambien*/
+#doortext {
+
+opacity: 0;/*esto hara que no se vea, que sea transparente*/
+animation-name: showdoortext;
+animation-duration: 6s;
+animation-iteration-count: infinite;}/*esto lo convierte en bucle*/
+@keyframes showdoortext {
+  from{opacity:0;
+    color: white;
+    left: 0px;
+  }
+  to{opacity: 1;
+  color: red;
+left: 1100px;}
+  
+}
+
