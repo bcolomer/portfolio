@@ -1,7 +1,7 @@
 /*****/
 /****/
 
-  
+   
 
 /*external fonts*/
 
@@ -37,12 +37,12 @@ display: none; la bruja no se ve por defecto*/
 visibility:hidden;
 }
 #pumpkin_smile{
-  width: 80px;
-  height: 20px;
+  width: 30px;
+  height: 80px;
 /*border: 2px solid white; */
 position: absolute; 
-top: 570px;
-left: 200px;
+top: 490px;
+left: 120px;
 }
 #face{
 position: absolute; 
