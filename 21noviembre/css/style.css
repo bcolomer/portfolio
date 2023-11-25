@@ -1,0 +1,38 @@
+/*intro section grid de dos columnas id con # clase con .*/
+.grid-2{
+  display: grid;
+  grid-template-columns:  100%;/*solo cabe una columna en movil tambien hay que cambiarlo*/
+}
+.col-2 {padding: 4%;
+ }
+
+#introimg{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+/*footer*/
+footer {
+  background-color: black;
+  color: white;
+}
+body{
+  background-color: CCC; /*ccc es un gris*/
+  
+}
+.grid-3d{
+  display: grid;
+  grid-template-columns: 50% 50%;}
+  .col-4 {padding:4%}
+
+/*responsividad  mobile first en  wrapper ( es una etiqueta que corresponde a la pagina 
+de blackmirror de la profesora poner al  100% */
+@media only screen and (width>650px){
+  #wrapper {width:80%;}
+  }
+
+@media only screen and (width>800px){/*para tablet*/
+.grid-2 {
+  grid-template-columns: 50% 50%;
+}
+.grid-3d {grid-template-columns: 25% 25% 50%;}}
