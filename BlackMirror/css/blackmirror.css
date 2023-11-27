@@ -1,0 +1,116 @@
+/*********************************************************/
+/*        Style sheet for Black Mirror web site          */
+/*        author: Pilar González                         */
+/*        version: 1.0                                   */
+/*        comments: class project 2023-24                */
+/*********************************************************/
+/* cuando quiero usar una tipografía y asegurarme de que se verá
+/*  correctamente, suministro también con la página el archivo
+/*   de la fuente que será .ttf ó .otf                      */
+
+/* 1- ahora, enlazo el archivo descargado                    */
+/* 2- utilizar el nombre de la font-family donde quiera usarlo */
+
+@font-face {   /* esto no es un selector, es un enlace */
+      font-family: blackmirror;
+      src: url(../font/FontsFree-Net-Proxima-Nova-Bold.otf);
+}
+
+@font-face {
+      font-family: textonormal;
+      src: url(../font/OpenSans-Regular.ttf);
+}
+
+/*************************** estilo general *********************/
+
+* {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
+
+body {margin:0;padding:0;   /* para desactivar el espacio de separación por defecto */
+      background-color: #ccc;
+      font-family: textonormal;}
+
+#wrapper {background-color:#808080;
+          width:100%;        /* ancho fijado al 100%  MOBILE FIRST */
+          margin:auto;}     /* centrado automático */
+button{}
+button:hover{}
+html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
+
+/***************************   HERO SECTION *********************************/
+
+#hero {background-image: url(../img/hero.webp);
+      height:95vh;    /* el 100% del alto de la ventana del navegador */ 
+      background-size: cover;
+      background-position:center;
+      position:relative;  /**** contenedor relativo *****/}
+
+#hero button {background-color:#808080;
+            color:black;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding:15px ;
+            border:none;
+            border-radius: 10px;
+            position:absolute;    /******* contenido absoluto ******/
+            top:70%;
+            left:50%;
+              transform:translate(-50%,-50%); /*** lo traslado a la mitad de su tamaño **/ 
+}
+#hero button:hover {
+      background-color: black;
+      color: #808080;
+      border: 1px solid #808080;
+}
+
+/******************  INTRO SECTION (GRID-2) ************************/
+
+.grid-2 {display:grid;
+         grid-template-columns: 100%;} /*** MOBILE FIRST ****/
+
+.col-2 {padding:4%;}
+
+#introimg {width:80%;
+      display:block;
+      margin:auto;}
+
+/******************** SESSIONS SECTION (GRID DE 4) *********************/
+#sessions {background-color: rgb(234, 234, 234);}
+.grid-4 {display:grid;
+         grid-template-columns: 100%;}  /**** MOBILE FIRST *******/
+
+
+
+
+/******************** footer *****************************************/
+footer {background-color: black;
+      color:white;}
+.grid-3d {
+      display:grid;
+      grid-template-columns: 50% 50%; 
+}
+
+.col-4 {padding:4%;}
+
+/**************** estilo de la card dentro del grid-4 ****************/
+
+.card {
+      border:1px solid gray;
+      background-color: white;
+      border-radius: 5%;
+      padding:4%;}
+.card:hover {box-shadow: 3px 3px 5px #808080;}
+.card img {width:100%}
+
+
+/************** responsividad ****************************************/
+
+@media only screen and (width>650px){   /****** TABLET *********/
+      #wrapper {width:80%;}
+      .grid-4 {grid-template-columns: auto auto;}
+}
+
+@media only screen and (width>900px){   /************* COMPUTER **********/
+      .grid-2 {grid-template-columns:50% 50%;}
+      .grid-3d {grid-template-columns: 25% 25% 50%;}
+      .grid-4 {grid-template-columns: auto auto auto auto;}
+}

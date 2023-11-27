@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halloween</title>
-  <link rel="stylesheet" href="../Halloween/css/halloween.css">
-  <link rel="shortcut icon" href="../Halloween/img/fav.png" type="image/x-icon">
-  <script src="../Halloween/js/halloween.js"></script><!--aqui se enlaza el archivo externo con las funciones de js-->
+  <link rel="stylesheet" href="./css/halloween.css">
+  <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+  <script src="./js/halloween.js"></script><!--aqui se enlaza el archivo externo con las funciones de js-->
 </head>
 
 <body>
 
-  <audio source src="../Halloween/sound/darkness.mp3" controls loop>
+  <audio source src="./sound/darkness.mp3" controls loop>
 
   </audio>
   <p id="controls_text">press play for a truly creepy experience</p>
   <!--los controles aparecen arriba a la izquierda, poner audio que suene al play-->
   <div id="scenario">
 
-    <img id="witch" src="../Halloween/img/witch.gif" alt="">
+    <img id="witch" src="./img/witch.gif" alt="">
     <div id="door" onmouseover="show('witch'); sound('witchlaugh')" onmouseout="hide('witch'); silence('witchlaugh')">
       <!--esto es el nombre de una funcion y lo que esta entre parentesis es el id de la imagen-->
       <!--nothing inside-->
@@ -27,25 +27,25 @@
 
     <audio id="witchlaugh" preload="auto"><!--preload es para que el audio se precargue y no tarde en sonar-->
       <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
-      <source src="../Halloween/sound/evil-witch-laugh-140135.mp3" type="audio/mp3">
+      <source src="./sound/evil-witch-laugh-140135.mp3" type="audio/mp3">
     </audio>
 
-    <img id="face" src="../Halloween/img/face.gif" alt="">
+    <img id="face" src="./img/face.gif" alt="">
     <div id="pumpkin_smile" onmouseover="show('face'); sound('grito')" onmouseout="hide('face'); silence('grito')">
     </div>>
     <audio id="grito" preload="auto">
       <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
-      <source src="../Halloween/sound/grito.mp3" type="audio/mp3">
+      <source src="./sound/grito.mp3" type="audio/mp3">
     </audio>
 
 
-    <img id="bat" src="../Halloween/img/bat.gif" alt="">
+    <img id="bat" src="./img/bat.gif" alt="">
     <div id="chimney" onmouseover="show('bat'); sound ('batsound')" onmouseout="hide('bat'); silence ('batsound')">
       <!--nothing inside-->
     </div>
     <audio id="batsound" preload="auto">
       <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
-      <source src="../Halloween/sound/bats.mp3" type="audio/mp3">
+      <source src="./sound/bats.mp3" type="audio/mp3">
     </audio>
 
 
