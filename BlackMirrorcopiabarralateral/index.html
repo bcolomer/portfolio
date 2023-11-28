@@ -20,25 +20,20 @@
 
     <div id="wrapper"> <!-- contenedor general -->
         <nav>
-            <div class="topnav" id="myTopnav">
-                <a href="#" class="active">Home</a><!--solo # es el indicio de la pagina-->
-                <a href="#intro">Introduccion</a>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#intro">Introduction</a>
                 <a href="#sessions">Sessions</a>
-                <a href="#funfacts">Fun Facts</a>
                 <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <!--void 0 desactiva el comportamiento por defecto que tiene un vinculo y a cambio activa el onclick-->
-                    <i class="fa fa-bars"></i><!--este es el menu hamburguesa-->
-                </a>
+                <a href="#contac">Contact</a>
             </div>
         </nav><!-- obligatoria-->
-        <!--arrow up posicionada en la esquina inferior derecha-->
-        <a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 
 
         <section id="hero"><!-- cuasi obligatoria-->
-
+            <!--menu hamburguesa que hace que se vea la barra de nav-->
+            <span id="hamburguesa" onclick="openNav()">&#9776; </span>
 
             <a href="#intro"><button>Who dares?</button></a>
             <!--esto te lleva al hacer click a la section con id intro-->

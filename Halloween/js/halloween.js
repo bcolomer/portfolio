@@ -1,3 +1,5 @@
+node --debug your-script.js
+
 /***********************************************
  * js function for halloween excercise
  * author: Barbara Colomer
