@@ -123,8 +123,8 @@ html{scroll-behavior: smooth;}/*esto suaviza todos las bajadas de scroll*/
       display:block;
       margin:auto;}
 
-/******************** SESSIONS SECTION (GRID DE 4) *********************/
-#sessions {background-color: rgb(234, 234, 234);}
+/******************** seasons SECTION (GRID DE 4) *********************/
+#seasons {background-color: rgb(234, 234, 234);}
 .grid-4 {display:grid;
          grid-template-columns: 100%;}  /**** MOBILE FIRST *******/
 

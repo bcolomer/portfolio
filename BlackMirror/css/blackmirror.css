@@ -126,13 +126,74 @@ a .fa-arrow-circle-up{
       display:block;
       margin:auto;}
 
-/******************** SESSIONS SECTION (GRID DE 4) *********************/
-#sessions {background-color: rgb(234, 234, 234);}
+/******************** seasons SECTION (GRID DE 4) *********************/
+#seasons {background-color: rgb(234, 234, 234);}
 .grid-4 {display:grid;
          grid-template-columns: 100%;}  /**** MOBILE FIRST *******/
 
 
+/*estilo del video dentro de la card*/
+#seasons .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /*para 4*3 , 56.25%; para  16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+ 
+}
 
+/* Then style the iframe to fit in the container div with full height and width */
+#seasons .responsive-iframe {
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  width: 80%; /*en lugar de al 100% deja un libre un 20% y lo acomodamos con top y left para centrarlo un poco*/
+  height: 80%;
+}
+/*******predictions*******/
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#predictions {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.accordion {
+  max-width: 60%;
+  text-align: left;
+}
+
+article {
+  border: 1px solid #fff;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+input[type="radio"] {
+  appearance: none;
+  position: fixed;
+  top: -100vh; left: -100vh;
+
+  & ~ div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+  }
+
+  &:checked ~ div {
+    max-height: 200px;
+  }
+}
 
 /******************** footer *****************************************/
 footer {background-color: black;
@@ -140,10 +201,52 @@ footer {background-color: black;
 .grid-3d {
       display:grid;
       grid-template-columns: 50% 50%; 
+      
 }
 
 .col-4 {padding:4%;}
+footer .fa{
+      padding: 15px 10px;
+  font-size: 1.5em;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:50%/*es margen por dentro, amplia el margen interno, se ve mejor en el icono de facebook*/
+}
+footer a {
+      color: white;
+      text-decoration: none;
+}
+footer .fa-facebook{
+      background: #3B5998;
+  color: white;
+}footer .fa-whatsapp{
+background-color: #25D366;
+  }
 
+footer .fa-twitter{
+      background-color: #55ACEE;
+}
+footer .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%; /*para 4*3 , 56.25%; para  16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+ 
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+footer .responsive-iframe {
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  width: 80%; /*en lugar de al 100% deja un libre un 20% y lo acomodamos con top y left para centrarlo un poco*/
+  height: 80%;
+}
 /**************** estilo de la card dentro del grid-4 ****************/
 
 .card {
