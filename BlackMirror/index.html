@@ -10,8 +10,7 @@
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <!--esto que viene hace que se pueda usar el menu hamburguesa de font awasome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--enlaza los js del wbsite-->
-    <script src="./js/functions.js"></script>
+
 </head>
 
 <body>
@@ -23,8 +22,8 @@
             <div class="topnav" id="myTopnav">
                 <a href="#" class="active">Home</a><!--solo # es el indicio de la pagina-->
                 <a href="#intro">Introduccion</a>
-                <a href="#seasons">seasons</a>
-                <a href="#funfacts">Fun Facts</a>
+                <a href="#seasons">Seasons</a>
+                <a href="#predictions">Predictions</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -220,10 +219,46 @@
                     <a href="https://www.netflix.com/es/title/70264888"
                         target="_blank"><!--esto hace que se abra en una nueva pestaña-->Black Mirror en Netflix</a>
 
+                    <!-- creditos hechos en ventana modal de w3s -->
 
+                    <!-- Trigger/Open The Modal -->
+                    <h3 id="myBtn">Créditos</h3>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolores error
+                                voluptate natus earum laboriosam architecto, perferendis eius, debitis quisquam
+                                molestias rem accusantium. Accusamus reprehenderit, error nihil ratione eligendi ullam?
+                                Sequi eum maxime quo nemo quasi rerum minus. Voluptatum corporis, animi obcaecati amet,
+                                tempora ad repudiandae ab illo, excepturi ipsa doloribus impedit veritatis beatae eius
+                                recusandae! Voluptatem obcaecati similique quo.
+                                Facere numquam eius distinctio assumenda atque quis quos quidem. Explicabo odit sit,
+                                iusto nulla temporibus quos est quo incidunt, impedit vero deserunt? Itaque officia esse
+                                vel corrupti incidunt magni dolorem.</p>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="col-4">
-                    <h3>vinculos:</h3>
+                    <a href="#">
+                        <p>Home</p>
+                    </a>
+                    <a href="#intro">
+                        <p>Introduction</p>
+                    </a>
+                    <a href="#seasons">
+                        <p>Seasons</p>
+                    </a>
+                    <a href="#predictions">
+                        <p>Predictions</p>
+                    </a>
+                    <a href="#gallery">
+                        <p>Gallery</p>
+                    </a>
 
                 </div>
                 <div class="col-2">
@@ -237,6 +272,8 @@
             </div>
         </footer><!-- prácticamente obligatorio-->
     </div>
+    <!--enlaza los js del wbsite se pone al final para permmitir cargar la pagina completa antes de que se carguen las funciones-->
+    <script src="./js/functions.js"></script>
 </body>
 
 </html>
