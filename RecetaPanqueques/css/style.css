@@ -1,0 +1,177 @@
+/*******************************************************************/
+/*              Hoja de estilo de Panqueques.html                  */
+/*              Autor: Barbara Colomer                             */
+/*              Version: 1.0                                       */
+/*              fecha: Diciembre 2023                              */
+/*              comentario: trabajo lenguaje en marcas             */
+/*                                                                 */
+/*******************************************************************/
+
+/*****************external fonts************************************/
+@font-face {
+  src: url(../font/cloudy.ttf); 
+  font-family: cloudy;
+}
+@font-face {
+  src: url(../font/halloween.ttf);
+  font-family: halloween; 
+}
+@font-face {
+    src: url(../font/bakery.ttf);
+  font-family: bakery;
+}
+@font-face {
+    src: url(../font/mango.ttf);
+  font-family: mango;
+}
+*
+{ box-sizing: border-box ;}
+
+body{
+  background-image: url(../img/cupcake.jpg);
+  background-size: contain; /* Ajusta la imagen dentro del cuerpo */
+  background-position: center; /* Centra la imagen */
+  display: flex; /* Utiliza flexbox para el posicionamiento */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  min-height: 100vh; /* Establece el 100% de la altura visible del viewport */
+  margin: 0;
+}
+h1{
+  font-family: mango;
+  font-size: 4.5em;
+  width: 90%;
+  padding:3%;
+  margin: 3% auto ;
+  /*border: solid black 2px;*/
+  text-align: center;
+  color: #A43B35;
+}
+h2{
+  font-family: bakery;
+  font-size: 3em;
+  font-weight: lighter;
+  color: #A43B35;
+text-decoration: underline 1.5px;
+}
+h3{
+  font-family: bakery;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #A43B35;
+  text-decoration: underline 1.5px;
+}
+#panqueques{
+    width: 90%; /* Establece el ancho de la imagen al 90% del contenedor padre (el body en este caso) */
+    height: auto; /* Esto mantiene la proporción original de la imagen */
+    display: block; /* Asegura que la imagen sea un bloque y respete el ancho especificado */
+    margin: auto; /* Centra la imagen horizontalmente dentro del contenedor */
+    border-radius: 7%;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2); /* Establece una sombra */
+}
+blockquote{
+  box-shadow: 4px 8px 16px #A43B35;
+  width: 60%; /* Ancho del bloque de cita */
+  padding: 2%;
+  margin:  5% auto 0; /* Establece los márgenes automáticos para centrar horizontalmente */
+  font-family: halloween;
+  font-size: 1.6em;
+  color: rgb(164, 59, 53) ;/*esto es el color de la letra*/
+  background-color: #fbf9e1;
+  border-bottom-right-radius: 10% 30%; /*esto hace que de una misma esquina empieze en un porcentaje difente segun los ejes x e y*/
+  border-top-right-radius: 10% 30%;
+  border-bottom-left-radius: 10% 30%;
+  border-top-left-radius: 10% 30%;
+  border: solid 1px;
+  border-color: #A43B35;
+  text-align: center;
+}
+#wrapper{
+position: relative;
+background-color: #FFFCCF;
+margin-top: 10%;
+margin-bottom: 10%;
+padding: 5%;
+width: 80%;
+color: #712f2b;
+font-family: cloudy;
+font-size: 1.5em;
+}
+li{
+  padding-bottom: 1.5%;
+}
+.vector-whisk {
+  list-style: none; /* Eliminar los marcadores predeterminados */
+  padding-left: 20px; /* Espacio para el ícono */
+}
+
+.vector-whisk li {
+  position: relative; /* Permitir posicionamiento relativo */
+  padding-left: 30px; /* Espacio adicional para el ícono */
+}
+
+.vector-whisk li:before {
+  content: ""; /* Contenido antes del elemento */
+  background-image: url(../img/whisk.png); /* Ruta a tu archivo SVG */
+  background-size: contain; /* Ajustar tamaño del ícono */
+  background-repeat: no-repeat; /* Evitar repetición */
+  width: 20px; /* Ancho del ícono */
+  height: 20px; /* Altura del ícono */
+  position: absolute; /* Posicionamiento absoluto */
+  left: 0; /* Alinear a la izquierda */
+  top: 50%; /* Alinear verticalmente al centro */
+  transform: translateY(-50%); /* Corregir centrado vertical */
+}
+dl {
+  display: grid;
+  grid-template-columns: auto auto; /* Crea dos columnas, una para <dt> y otra para <dd> */
+  gap: 10px; /* Espacio entre las columnas */
+  }
+
+dt {
+  grid-column: 1; /* Coloca los <dt> en la primera columna */
+}
+
+dd {
+  grid-column: 2; /* Coloca los <dd> en la segunda columna */
+}
+p{
+  font-size: larger;
+  text-align: justify;
+}
+ol{
+  display: flex;
+  flex-direction: column;
+  
+}
+.gallery{
+  border-radius: 5%;
+  margin: 5% 5%;
+  align-items: center;
+  max-width: 300px;
+  
+}
+#puntosFinales {
+  list-style: none;
+}
+/**************************************** RESPONSIVIDAD *****************************************/
+
+/********************************** ATENCIÓN: MEDIA QUERY ***************************************/
+
+
+@media only screen and (width<900px) {
+  h1{ font-size: 3.5em;}
+  h2{ font-size: 2.5em; }
+  h3{font-size: 2em;}
+  img{width:75%;}
+}
+@media only screen and (width<700px) {
+  h1{font-size: 3em;}
+  h2{font-size: 2em; }
+  h3{font-size: 1.5em;}
+  #wrapper {width:95%}    /*Redefino el ancho del wrapper para el movil*/
+  blockquote {
+    width:70%;
+    font-size: medium;}
+  img{width:50%;}
+}
