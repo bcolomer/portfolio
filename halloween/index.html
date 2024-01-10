@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween</title>
+  <link rel="stylesheet" href="./css/halloween.css">
+  <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+  <script src="./js/halloween.js"></script><!--aqui se enlaza el archivo externo con las funciones de js-->
+</head>
+
+<body>
+  <!--this excersice is made just for fun Uahahahahaha!!!!-->
+  <!-- WARNING:  it´s not RESPONSIVE, only for computers and laptops-->
+  <!-- I have to search for an image, a wallpaper image-->
+  <!--los controles aparecen arriba a la izquierda, poner un 
+  audio para que la musica aparezca 
+  en cuanto le den al play con un mensaje y que haya musica reproduciendose todo el rato-->
+
+  <audio source src="./sound/darkness.mp3" controls loop>
+
+  </audio>
+  <p id="controls_text">press play for a truly creepy experience</p>
+  <!--los controles aparecen arriba a la izquierda, poner audio que suene al play-->
+  <div id="scenario">
+    <!-- we´re going to fix an specific area for an event for example the door-->
+
+    <img id="witch" src="./img/witch.gif" alt="">
+    <div id="door" onmouseover="show('witch'); sound('witchlaugh')" onmouseout="hide('witch'); silence('witchlaugh')">
+      <!--esto es el nombre de una funcion y lo que esta entre parentesis es el id de la imagen-->
+      <!--nothing inside-->
+    </div>
+    <audio id="witchlaugh" preload><!--preload es para que el audio se precargue y no tarde en sonar-->
+      <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
+      <source src="./sound/risaBruja.mp3" type="audio/mp3">
+    </audio>
+
+    <img id="face" src="./img/face.gif" alt="">
+    <div id="pumpkin_smile" onmouseover="show('face'); sound('grito')" onmouseout="hide('face'); silence('grito')">
+    </div>>
+
+    <audio id="grito" preload="auto">
+      <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
+      <source src="./sound/grito.mp3" type="audio/mp3">
+    </audio>
+
+    <img id="bat" src="./img/bat.gif" alt="">
+    <div id="chimney" onmouseover="show('bat'); sound ('batsound')" onmouseout="hide('bat'); silence ('batsound')">
+      <!--nothing inside-->
+    </div>
+    <audio id="batsound" preload="auto">
+      <!--si se pone la palabra controls al lado de audio, aparecen los controles de audio en la web-->
+      <source src="./sound/bats.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  <!--textos de aviso-->
+  <p id="doortext">Don´t knock on door!!!</p>
+  <p id="invitation_text">You are invited to our first "human hunting" party.
+    Don't forget to bring your flying broom!
+    We will have special prizes for the best poison potion.
+    You will be sent a bat with the time and place.
+    ssssssssshhhhhhhhhhhhhhhhhhhhh Don't tell .....</p>
+  <p id="carved_pumpkin_text">Don´t you dare to still my carved pumpkin</p>
+  <p id="beware_text">...Beware of what may come out of the chimney... </p>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+/*external fonts*/
+@font-face {
+  src: url(../font/bloody.ttf); 
+  font-family: terror;
+}
+@font-face {
+  src: url(../font/mrsmonster.ttf);
+  font-family: miedo; 
+}
+@font-face {
+  font-family: murderer;
+  src: url(../font/murderer.ttf);
+}
+
+/* Estilos para los controles de audio */
+audio::-webkit-media-controls-panel {
+  background-color: #515050; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+body{
+  background-color: black;
+}
+
+#scenario {
+  width: 1245px;
+  height: 700px;
+  background-image: url(../img/background.jpg);
+  margin:auto;
+  position:relative
+}
+#door{
+  width: 40px;
+  height: 75px;
+/*border: 2px solid purple; se coloca un borde visible para encontrarlo al momento de posicionarlo*/
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+top: 340px;
+left: 740px;
+}
+#witch{
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+height: 100px;
+top: 340px;
+left: 650px;
+/*border: 2px solid purple;*/
+/*display: none; la bruja no se ve por defecto*/
+visibility:hidden;
+}
+#pumpkin_smile{
+  width: 30px;
+  height: 50px;
+/*border: 2px solid white; */
+position: absolute; 
+top: 390px;
+left: 90px;
+}
+#face{
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+height: 250px;
+top: 500px;
+left: 200px;
+/*border: 2px solid purple;*/
+/*display: none; la persona no se ve por defecto*/
+visibility:hidden;
+}
+#chimney{
+  width: 60px;
+  height: 70px;
+/*border: 2px solid white;*/
+position: absolute; 
+top: 110px;
+left: 920px;
+}
+#bat{
+position: absolute; 
+/*esto posiciona el event de raton, hay que ir calculandolo de a poco*/
+height: 100px;
+top: 140px;
+left: 920px;
+/*border: 2px solid purple;*/
+/*display: none;los murcielagos no se ve por defecto*/
+visibility:hidden;
+}
+
+
+#carved_pumpkin_text{
+  color: #faf9f9;
+  position: absolute;
+  font-size: 2em;
+  top: 30px;
+  left: 20px;
+  right: 1010px;
+  font-family: murderer;
+}
+#controls_text{
+  color: #f30b0b;
+  font-family: terror;
+  font-size: 2.8em;
+  position: absolute;
+  top: -30px;
+  left: 350px;
+}
+#doortext{
+  font-size: 3.5em;
+  font-family: terror;
+  position: absolute;
+  top: 30px;
+  left: 500px;
+}
+#doortext {
+opacity: 0;/*esto hara que no se vea, que sea transparente*/
+animation-name: showdoortext;
+animation-duration: 5s;
+animation-iteration-count:infinite ;/*esto lo convierte en bucle*/
+}
+@keyframes showdoortext {
+  from{
+    opacity:0;
+    color: white;
+    left: 0px;
+  }
+    to{opacity: 1;
+    color: red;
+    left: 900px;}
+}
+#invitation_text{
+  color: #ffffff;
+  font-size: 2.5em;
+  font-family: miedo;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  right: 400px;
+}
+#invitation_text {
+opacity: 0;
+animation-name: showinvitation;
+animation-duration: 40s;
+animation-iteration-count: 1;/*esto que solo se reproduzca una vez*/
+}
+@keyframes showinvitation {
+  from{
+    opacity:1;
+    color: white;
+    top: 700px;
+  }
+  to{
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.009)(147, 141, 141);
+    top: 0px;}
+  }
+  #beware_text{
+  color: azure;
+  font-family: murderer;
+  font-size: 2.5em;
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  left: 980px;
+}
+  #beware_text {
+    opacity: 0;
+    animation-name: showbeware;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes showbeware {
+    from{
+      opacity: 0;
+      color: red;
+    }
+    to {
+      opacity: 1;
+      color: white;
+    }  
+  }
