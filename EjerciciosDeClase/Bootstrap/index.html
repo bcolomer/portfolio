@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Bootstrap 5 de clase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myboostrap.css">
+
+</head>
+
+<body> <!--class="bg-secondary-subtle" quito el color porque le puse una imagen bg es background color-->
+    <div id="wrapper" class="container-lg bg-white p-6  border border-primary border-width-1 rounded-5">
+        <!--bg es background color, p de padding-->
+        <h1 class="text-center text-purple display-2">TORTILLA DE PATATAS</h1><!--danger es rojo-->
+
+        <!--cita sobre receta-->
+        <figure class="text-end mt-5 mb-5 border-end border-5 border-warning p-3 bg-warning-subtle">
+            <blockquote class="blockquote">
+                <p>La tortilla de patatas es lo mejor que se ha inventado.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Napoleon en su obra <cite title="Source Title">Me gusta comer</cite>
+            </figcaption>
+        </figure>
+
+        <!--video de la receta mx es margin horizontal my en vertical w50 es mitad de tamaño pero si quiero que en 
+        mobil no se reduzca w-sm-100 en movil al 100% y en w-md-75 -->
+        <div class="ratio ratio-16x9 mt-5 w-sm-100 w-lg-100 w-md-75 mx-auto">
+            <iframe src="https://www.youtube.com/embed/r-jLzGLWXi8?si=dZ5XW2wwdAOHbLiN" title="YouTube video"
+                allowfullscreen></iframe>
+        </div>
+        <table class="table-responsive border-end border-danger">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>jlkjdfadkjadajdalñkjfd@twitter.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

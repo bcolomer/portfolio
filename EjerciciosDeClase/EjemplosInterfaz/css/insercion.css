@@ -1,0 +1,54 @@
+/*************************************/
+/*estilo de insercion htlm*/
+/*fecha ersion etc*/
+/**/
+
+/* esto no funciona: que ponga asterisco rojo en los input por rellenar
+label + input:required:after {content:"*";
+            color: red;
+        font-weight: bold;
+   
+
+label{
+        display: block;
+}
+label + input:required:after {content:"*";
+            color: red;
+        font-weight: bold;
+    } }*/
+    label span{ color: red;
+
+    }
+form{
+    width: 60%;
+    min-width: 500px;/*esto es para que no se achique mas de lo que le digo*/
+    max-width: 600px;
+    margin:auto;/*podriamos usar grid o flexbox para la caja completa o para lo de dentro del formulario*/
+    padding: 20px;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px gray /*para neomorfismo*/
+}
+form:hover{ /*esto es lo que hace al poner el raton por encima, para conseguir mas el neoorfismo*/
+ box-shadow: 3px 3px 10px rgb(165, 92, 92)
+    
+}
+/* input[type="text"]{/*los corchetes me permiten referirme a un atributo (lo que estan dentro de las etiquetas
+    margin-bottom: 20px;
+    width: 100%;}
+    se puede invertir el selector, que todo lo que sea texto o todo lo que no sea submit como en el de abajo */
+
+    input:not([type="submit"]):not([type="checkbox"]):not([type="radio"])
+    {
+    margin-bottom: 20px;
+    width: 100%;
+}
+input, textarea, select{
+    margin-bottom: 20px;
+}
+/*esto lo haria con todos menos con el tipo text
+input:not([type="text"]){/*los corchetes me permiten referirme a un atributo (lo que estan dentro de las etiquetas
+    margin-bottom: 20px;
+    width: 100%;
+}*/
+ 

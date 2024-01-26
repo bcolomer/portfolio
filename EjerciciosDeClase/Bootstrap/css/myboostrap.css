@@ -1,0 +1,26 @@
+/****/
+/*my own style for my bootstrapweb*/
+/*etc*/
+/**********************************/
+
+/*adding color*/
+.bg-purple{     background-color: rgb(176, 115, 232);}
+.text-purple{ color:rgb(225, 161, 225);}
+.border-purple{border-color: rgb(129, 6, 244);}
+
+/*adding new padding bootstrap tiene hasta 5 por eso lo pongo en 6*/
+.p-6{padding: 6em;}
+.pt-6{padding-top: 6em;}
+
+/**adding new height*/
+
+.h-85 {height: 85vh;}
+
+
+@font-face{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    src:url();
+}
+body{background-image: url(../img/mantelo.png);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

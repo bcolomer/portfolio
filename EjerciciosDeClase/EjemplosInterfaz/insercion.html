@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de insercion</title>
+    <link rel="stylesheet" href="./css/insercion.css">
+</head>
+
+<body>
+
+    <form action="" method="post"> <!--method es el metodo de envio, por defecto, post, de forma oculta-->
+        <!--action se usa para enviar los datos a un ejecutable de backend-->
+        <h2>Inserción de datos</h2>
+
+
+        <!--fieldset es un recuadro para dividir un campo, te agrupa los datos-->
+
+        <fieldset>
+            <!--legend esto tiene solo ventajas de etiquetas semanticas el legend dentro del fielset aparece el texto dentro del recueadro-->
+            <legend>Datos personales </legend>
+
+
+
+            <!--introduccion de nombre-->
+            <label for="">Nombre:
+                <span>*</span>
+            </label>
+            <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required><br>
+            <!-- para ser un formulario de edicion seria asi:-->
+            <!-- input type="text" id="nombre" name="nombre" placeholder="barbara" required><br>-->
+
+            <!--introduccion de apellido-->
+            <label for="">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="escribe tus apellidos" required><br>
+        </fieldset>
+        <!--introduccion de fecha de ingreso-->
+        <label for="">Fecha de ingreso</label>
+        <input type="date" id="fechaIn" name="fechaIn" required><br>
+
+        <!--introduccion de correo de contacto-->
+        <label for="">correo electronico</label>
+        <input type="email" id="email" name="email" placeholder="obligatorio" required><br>
+
+        <!-- select -->
+        <label for="">Elige provincia</label><br>
+        <select name="provincia" id="provincia">
+            <option value="0">Elige provincia</option><!-- esto se pone siempre con un valor erroneo -->
+            <option value="29">Malaga</option>
+            <option value="13">Granada</option>
+            <option value="04">Almeria</option>
+        </select><br><br>
+
+
+
+        <!-- textarea -->
+        <label for="comentarios">Comentarios</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+
+        <!-- radio button se utiliza para elegir entre varias alternativas -->
+        <input type="radio" name="sexo" id="male" value="male"><label for="male">Hombre</label><br>
+        <input type="radio" name="sexo" id="female" value="female"><label for="female">Mujer</label><br>
+        <input type="radio" name="sexo" id="other" value="other"><label for="other">Otro</label><br>
+
+
+        <!--casilla de verificacion -->
+        <input type="checkbox" name="terminos" id="terminos" required>
+        <label for="">Acepto los <a href="">términos y condiciones</a></label><br>
+
+        <!--            el boton enviar, es obligatorio        -->
+        <button type="submit">Enviar</button>
+        <input type="reset" value="reset">
+
+
+
+
+    </form>
+</body>
+
+</html>

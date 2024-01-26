@@ -2,7 +2,7 @@
 /** estilo del listado de mepleados */
 /**autor fecha version crud lenguaje de marcas*/
 
-/*****estilo general*/
+/*****estilo general*/ 
 #container{
     width: 80%;
     display: flex;
@@ -11,6 +11,7 @@
     height: 80vh;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column; /*esto hacer que de estar alineado en horizontal y lo alinee en vertilal*/
 }
 h1{
     text-align: center;
@@ -35,8 +36,9 @@ tr:first-child{
     background-color: rgb(116, 5, 116);
     color: white;
 }
-
-tr:hover {background-color: rgb(194, 151, 240);}
+/**CORREGIR COLORES*/
+/*tdr:hover {background-color: rgb(194, 151, 240);}*/
+tdr:hover {background-color: rgb(194, 151, 240);}
 
 /*estilo botones*/
 .btn {
